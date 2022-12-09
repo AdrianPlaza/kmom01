@@ -1,5 +1,5 @@
 ---
-title: bruh
+title: meta
 Logo: image/monkeySippingCapriSun.jpg
 Tagline: My portfolio.
 Social:

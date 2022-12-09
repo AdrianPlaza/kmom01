@@ -1,0 +1,29 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+    
+}
+
+div {
+    font-family: $font-family2;
+
+    p {
+        font-family: $font-family;
+        color: rgb(66, 66, 66);
+    }
+}
