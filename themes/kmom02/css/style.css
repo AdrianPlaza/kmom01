@@ -6166,28 +6166,35 @@ div p {
   color: rgb(66, 66, 66);
 }
 
-#tech-main {
-  width: 50%;
+.tech-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-main {
+  width: 90%;
   display: grid;
+  gap: 10px;
 }
 @media (min-width: 1000px) {
-  #tech-main {
+  .tech-main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
-@media (max-width: 390px) {
-  #tech-main {
+@media (max-width: 480px) {
+  .tech-main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
-#python-block {
+.python-block {
   background-color: #3c78aa;
 }
 @media (min-width: 1000px) {
-  #python-block {
+  .python-block {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -6195,11 +6202,11 @@ div p {
   }
 }
 
-#php-block {
+.php-block {
   background-color: #767bb3;
 }
 @media (min-width: 1000px) {
-  #php-block {
+  .php-block {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
@@ -6207,11 +6214,11 @@ div p {
   }
 }
 
-#css-block {
+.css-block {
   background-color: #767bb3;
 }
 @media (min-width: 1000px) {
-  #css-block {
+  .css-block {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -6219,11 +6226,11 @@ div p {
   }
 }
 
-#html-block {
+.html-block {
   background-color: #f1652a;
 }
 @media (min-width: 1000px) {
-  #html-block {
+  .html-block {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -6231,11 +6238,11 @@ div p {
   }
 }
 
-#sqlite-block {
+.sqlite-block {
   background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
-  #sqlite-block {
+  .sqlite-block {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 2;
@@ -6243,11 +6250,11 @@ div p {
   }
 }
 
-#git-block {
+.git-block {
   background-color: #000000;
 }
 @media (min-width: 1000px) {
-  #git-block {
+  .git-block {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -6255,11 +6262,11 @@ div p {
   }
 }
 
-#js-block {
+.js-block {
   background-color: #f4db1c;
 }
 @media (min-width: 1000px) {
-  #js-block {
+  .js-block {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -6270,16 +6277,134 @@ div p {
 .tech-block {
   text-align: center;
   border-style: solid;
-  color: white;
-  border-color: black;
+  padding: 20px 0;
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .tech-block {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1000px) {
   .tech-block {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech2-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.tech-main2 {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 480px) {
+  .tech-main2 {
+    font-size: 0.2rem;
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  .tech-main2 {
+    font-size: 2rem;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .tech-body-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 15;
+  }
+}
+@media (max-width: 480px) {
+  .tech-body-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 15;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.tech-sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-decoration: none;
+  user-select: none;
+}
+@media (max-width: 480px) {
+  .tech-sidebar {
+    display: none;
+  }
+}
+
+.tech-sidebar:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .css-block2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #767bb3;
+  }
+}
+
+@media (min-width: 1000px) {
+  .git-block2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #000;
+  }
+}
+
+@media (min-width: 1000px) {
+  .html-block2 {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: #f1652a;
+  }
+}
+
+@media (min-width: 1000px) {
+  .js-block2 {
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background-color: #f4db1c;
+  }
+}
+
+@media (min-width: 1000px) {
+  .php-block2 {
+    grid-row-start: 9;
+    grid-row-end: 11;
+    background-color: #767bb3;
+  }
+}
+
+@media (min-width: 1000px) {
+  .python-block2 {
+    grid-row-start: 11;
+    grid-row-end: 13;
+    background-color: #3c78aa;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sqlite-block2 {
+    grid-row-start: 13;
+    grid-row-end: 15;
+    background-color: #1a3c48;
   }
 }
