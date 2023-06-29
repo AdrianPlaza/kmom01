@@ -27,3 +27,100 @@ div {
         color: rgb(66, 66, 66);
     }
 }
+
+#tech-main {
+    width:50%;
+    display:grid;
+    
+    @media (min-width : 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width : 390px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+    
+#python-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    background-color:#3c78aa;
+}
+
+#php-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    background-color:#767bb3;
+}
+
+#css-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    background-color:#767bb3;
+}
+
+#html-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    background-color:#f1652a;
+}
+
+#sqlite-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    background-color:#1a3c48;
+}
+
+#git-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    background-color:#000000;
+}
+
+#js-block {
+    @media (min-width : 1000px) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    background-color:#f4db1c;
+}
+
+.tech-block {
+    text-align: center;
+    @media (max-width : 320px) {
+        font-size: 0.5rem;
+    }
+    @media (min-width : 1000px) {
+        font-size: 3rem;
+    }
+    border-style: solid;
+    color: white;
+    border-color: black;
+}

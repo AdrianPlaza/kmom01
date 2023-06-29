@@ -6165,3 +6165,121 @@ div p {
   font-family: "Montserrat", sans-serif;
   color: rgb(66, 66, 66);
 }
+
+#tech-main {
+  width: 50%;
+  display: grid;
+}
+@media (min-width: 1000px) {
+  #tech-main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 390px) {
+  #tech-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+#python-block {
+  background-color: #3c78aa;
+}
+@media (min-width: 1000px) {
+  #python-block {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+#php-block {
+  background-color: #767bb3;
+}
+@media (min-width: 1000px) {
+  #php-block {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+#css-block {
+  background-color: #767bb3;
+}
+@media (min-width: 1000px) {
+  #css-block {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#html-block {
+  background-color: #f1652a;
+}
+@media (min-width: 1000px) {
+  #html-block {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+#sqlite-block {
+  background-color: #1a3c48;
+}
+@media (min-width: 1000px) {
+  #sqlite-block {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+#git-block {
+  background-color: #000000;
+}
+@media (min-width: 1000px) {
+  #git-block {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#js-block {
+  background-color: #f4db1c;
+}
+@media (min-width: 1000px) {
+  #js-block {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.tech-block {
+  text-align: center;
+  border-style: solid;
+  color: white;
+  border-color: black;
+}
+@media (max-width: 320px) {
+  .tech-block {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .tech-block {
+    font-size: 3rem;
+  }
+}
