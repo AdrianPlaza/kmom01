@@ -277,3 +277,39 @@ div {
         width: 300px;
     }
 }
+
+.spreadsheet-kmom05 {
+    @media (min-width : 1000px) {
+        width: 95%;
+        height: 5%;
+    }
+    @media (max-width : 480px) {
+        width: 300px;
+        height: 8%;
+    }
+}
+
+.gallery-main {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    
+    @media (min-width : 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media (max-width : 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div {
+        justify-self: center;
+    }
+}
+
+.youtube-clip {
+    @media (max-width : 480px) {
+        height: 310px;
+    }
+}

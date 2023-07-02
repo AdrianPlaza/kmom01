@@ -6444,3 +6444,43 @@ div p {
     width: 300px;
   }
 }
+
+@media (min-width: 1000px) {
+  .spreadsheet-kmom05 {
+    width: 95%;
+    height: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .spreadsheet-kmom05 {
+    width: 300px;
+    height: 8%;
+  }
+}
+
+.gallery-main {
+  width: 90%;
+  display: grid;
+  gap: 10px;
+}
+@media (min-width: 1000px) {
+  .gallery-main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.gallery-main div {
+  justify-self: center;
+}
+
+@media (max-width: 480px) {
+  .youtube-clip {
+    height: 310px;
+  }
+}
