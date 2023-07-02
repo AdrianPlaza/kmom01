@@ -10,8 +10,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'blockquotes';
 @import 'code';
 
+code {
+    color: $color-black;
+}
+
 html {
-    background: linear-gradient($background-color, $background-alternative-color) no-repeat;
+    background: linear-gradient($background-color-dark, $background-alternative-color-dark) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -21,12 +25,16 @@ html {
 }
 
 .nav a {
-    color: $font-color;
+    color: $font-color-dark;
 }
 
 * {
-    color: $font-color;
+    color: $font-color-dark;
     font-family: $font-family;
+}
+
+.box-text {
+    color: $color-black;
 }
 
 div {
@@ -34,7 +42,7 @@ div {
 
     p {
         font-family: $font-family;
-        color: $font-color;
+        color: $font-color-dark;
     }
 }
 
@@ -117,7 +125,7 @@ div {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    background-color: $color-git;
+    background-color: $color-black;
 }
 
 .js-block {
@@ -139,8 +147,10 @@ div {
         font-size: 3rem;
     }
     border-style: solid;
-    
+
     padding: 20px 0;
+    
+    color: $font-color-dark;
 }
 
 .tech2-body {
@@ -265,8 +275,8 @@ div {
 }
 
 .tech-rapport {
-    background-color: $report-option-color;
-    color: $font-color;
+    background-color: $report-option-color-dark;
+    color: $font-color-dark;
 }
 
 .img-size {

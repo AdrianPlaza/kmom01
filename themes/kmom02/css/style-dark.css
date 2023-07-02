@@ -6150,8 +6150,12 @@ pre code {
   line-height: 1.4;
 }
 
+code {
+  color: #000;
+}
+
 html {
-  background: linear-gradient(#c1dbe6, #e0fbfc) no-repeat;
+  background: linear-gradient(#475154, #363d3d) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 100%;
@@ -6161,12 +6165,16 @@ html {
 }
 
 .nav a {
-  color: #000;
+  color: #fff;
 }
 
 * {
-  color: #000;
+  color: #fff;
   font-family: sans-serif;
+}
+
+.box-text {
+  color: #000;
 }
 
 div {
@@ -6174,7 +6182,7 @@ div {
 }
 div p {
   font-family: sans-serif;
-  color: #000;
+  color: #fff;
 }
 
 .tech-body {
@@ -6289,6 +6297,7 @@ div p {
   text-align: center;
   border-style: solid;
   padding: 20px 0;
+  color: #fff;
 }
 @media (max-width: 480px) {
   .tech-block {
@@ -6421,8 +6430,8 @@ div p {
 }
 
 .tech-rapport {
-  background-color: #fcebe1;
-  color: #000;
+  background-color: #8a6f5f;
+  color: #fff;
 }
 
 @media (min-width: 1000px) {
