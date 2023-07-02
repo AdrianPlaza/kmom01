@@ -6202,7 +6202,7 @@ div p {
 }
 
 .python-block {
-  background-color: #3c78aa;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .python-block {
@@ -6214,7 +6214,7 @@ div p {
 }
 
 .php-block {
-  background-color: #767bb3;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .php-block {
@@ -6226,7 +6226,7 @@ div p {
 }
 
 .css-block {
-  background-color: #2a65f1;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .css-block {
@@ -6238,7 +6238,7 @@ div p {
 }
 
 .html-block {
-  background-color: #f1652a;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .html-block {
@@ -6262,7 +6262,7 @@ div p {
 }
 
 .git-block {
-  background-color: #000;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .git-block {
@@ -6274,7 +6274,7 @@ div p {
 }
 
 .js-block {
-  background-color: #f4db1c;
+  background-color: #1a3c48;
 }
 @media (min-width: 1000px) {
   .js-block {
@@ -6368,7 +6368,7 @@ div p {
   .css-block2 {
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #2a65f1;
+    background-color: #1a3c48;
   }
 }
 
@@ -6376,7 +6376,7 @@ div p {
   .git-block2 {
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: #000;
+    background-color: #1a3c48;
   }
 }
 
@@ -6384,7 +6384,7 @@ div p {
   .html-block2 {
     grid-row-start: 5;
     grid-row-end: 7;
-    background-color: #f1652a;
+    background-color: #1a3c48;
   }
 }
 
@@ -6392,7 +6392,7 @@ div p {
   .js-block2 {
     grid-row-start: 7;
     grid-row-end: 9;
-    background-color: #f4db1c;
+    background-color: #1a3c48;
   }
 }
 
@@ -6400,7 +6400,7 @@ div p {
   .php-block2 {
     grid-row-start: 9;
     grid-row-end: 11;
-    background-color: #767bb3;
+    background-color: #1a3c48;
   }
 }
 
@@ -6408,7 +6408,7 @@ div p {
   .python-block2 {
     grid-row-start: 11;
     grid-row-end: 13;
-    background-color: #3c78aa;
+    background-color: #1a3c48;
   }
 }
 
@@ -6468,10 +6468,21 @@ div p {
 }
 .gallery-main div {
   justify-self: center;
+  border-style: ridge;
+  border-color: #000;
+}
+.gallery-main div > a > picture > img {
+  box-shadow: 0 6px 2px 0 #000;
 }
 
 @media (max-width: 480px) {
   .youtube-clip {
     height: 310px;
   }
+}
+
+.line {
+  height: 1px;
+  background: #000;
+  opacity: 50%;
 }

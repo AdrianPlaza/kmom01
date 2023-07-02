@@ -2,7 +2,7 @@
 Title: About
 Description: This is our about page.
 ---
-
+<div class="line"></div>
 Om sidan
 ==========================
 

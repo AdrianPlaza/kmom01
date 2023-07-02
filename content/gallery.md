@@ -3,7 +3,7 @@ Title: Gallery
 Description: This is our index page.
 Template: technologies
 ---
-
+<div class="line"></div>
 TEKNOLOGIER
 ==========================
 
@@ -22,7 +22,7 @@ TEKNOLOGIER
         </picture>
     </a></div>
     <div ><a style="text-decoration:none;" href="image/blomma_3.jpg"><picture>
-            <source media="(min-width: 668px)" srcset="image/blomma_3.jpg?w=400&stretch&h=400&stretch">
+            <source media="(min-width: 668px)" srcset="image/blomma_3.jpg?w=400&h=400&stretch">
             <source media="(min-width: 350px)" srcset="image/blomma_3.jpg?w=260&h=260&stretch">
             <img src="image/blomma_3.jpg?w=375" alt="flower 3">
         </picture>
@@ -40,7 +40,7 @@ TEKNOLOGIER
         </picture>
     </a></div>
     <div ><a style="text-decoration:none;" href="image/blomma_6.jpg"><picture>
-            <source media="(min-width: 668px)" srcset="image/blomma_6.jpg?w=400&stretch&h=400&stretch">
+            <source media="(min-width: 668px)" srcset="image/blomma_6.jpg?w=400&h=400&stretch">
             <source media="(min-width: 350px)" srcset="image/blomma_6.jpg?w=260&h=260&stretch">
             <img src="image/blomma_6.jpg?w=375" alt="flower 6">
         </picture>

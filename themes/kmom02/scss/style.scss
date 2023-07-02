@@ -214,7 +214,7 @@ div {
     @media (min-width : 1000px) {
         grid-row-start: 3;
         grid-row-end: 5;
-        background-color: $color-black;
+        background-color: $color-git;
     }
     
 }
@@ -305,6 +305,12 @@ div {
 
     div {
         justify-self: center;
+        border-style: ridge;
+        border-color: #000;
+    }
+
+    div > a > picture > img {
+        box-shadow: 0 6px 2px 0 #000;
     }
 }
 
@@ -312,4 +318,10 @@ div {
     @media (max-width : 480px) {
         height: 310px;
     }
+}
+
+.line {
+    height: 1px;
+    background: #000;
+    opacity: 50%;
 }

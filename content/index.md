@@ -1,8 +1,9 @@
 ---
 Title: Home
 Description: This is our index page.
+Template: index
 ---
-
+<div class="line"></div>
 En sida om mig
 ==========================
 
